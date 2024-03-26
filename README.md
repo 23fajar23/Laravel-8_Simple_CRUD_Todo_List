@@ -12,7 +12,6 @@ Here I will share a Laravel project, where this project only contains CRUD. This
 
 ## Step after your clone this project :
 
--   Go into directory "Project"
 -   copy file .env.example and rename to .env
 -   create new database with name "simple_todo"
 -   open terminal and go to directory "Project"
