@@ -33,7 +33,16 @@ class HomeController extends Controller
             $todo = todo::all()->where('user_id', Auth::user()->id);
             return view('home',['todo' => $todo]);
         }
+    }
 
+    public function to_add()
+    {
+        return view('addTodo');
+    }
 
+    public function to_update(Request $request)
+    {
+        $todo = todo::where('id', $request->id)->first();
+        return view('updateTodo',['todo' => $todo]);
     }
 }
